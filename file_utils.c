@@ -36,7 +36,7 @@ int read_file( char* filename, char **buffer ){
 	//opens file if found
 	else if (fin != NULL){	
 
-		*buffer = malloc(size);
+		*buffer = (char*)malloc((size + 1) * sizeof(char));
 		fread(*buffer, size, sizeof(char), fin);
 		fclose(fin);
 	}

@@ -40,8 +40,9 @@ int main (int argc, char* argv[]){
 		i++; //increment i
 		j--; //decrment j
 	}
-	
+
 	write_file(write, buffer, size); // send  reversed buffer to write to file
+	free(buffer);
 
 	return 0;
 
