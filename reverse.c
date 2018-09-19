@@ -42,7 +42,8 @@ int main (int argc, char* argv[]){
 	}
 
 	write_file(write, buffer, size); // send  reversed buffer to write to file
-	free(buffer);
+
+	free(buffer); //free the memory
 
 	return 0;
 
